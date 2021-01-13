@@ -4,6 +4,7 @@ import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createAppContainer} from 'react-navigation';
 import TransactionScreen from './screens/TransactionScreen';
 import SearchScreen from './screens/SearchScreen';
+import Instagram from './screens/Instagram';
 
 export default function App() {
   return (
@@ -13,8 +14,8 @@ export default function App() {
   );
 }
 const TabNavigator = createBottomTabNavigator({
-  Transaction : {screen:TransactionScreen},
-  Search : {screen:SearchScreen}
+  Face : {screen:Facebook},
+  Insta : {screen:Instagram}
 })
 const AppContainer = createAppContainer(TabNavigator)
 
